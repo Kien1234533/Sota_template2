@@ -23,3 +23,9 @@ bar.addEventListener("click", () => {
 closeBar.addEventListener("click", function () {
   listBar.classList.remove("open-bar");
 });
+
+// Link book
+let anh = document.querySelector("#vanAnh");
+anh.addEventListener("click", () => {
+  window.location.href = "https://www.facebook.com/vaan.an618";
+});

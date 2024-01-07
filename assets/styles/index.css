@@ -207,6 +207,10 @@ body {
     cursor: pointer;
   }
 }
+#vanAnh {
+  cursor: pointer;
+}
+
 .content .content__banner {
   background: url(../img/bannergreen-removebg.png) center/cover;
   height: 560px;
