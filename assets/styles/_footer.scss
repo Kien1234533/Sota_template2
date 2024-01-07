@@ -1,0 +1,86 @@
+.footer .container .top {
+    display: flex;
+    gap: 30px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    border-bottom: 1.5px solid $main-color;
+}
+.footer {
+    background-color: rgba(18, 18, 18, 1);
+}
+.footer .container .top h4 {
+    color: #fff;
+}
+.footer .container .top .footer__about {
+    width: 30%;
+}
+.footer .container .top .footer__about p {
+    font-size: 13px;
+    line-height: 1.8em;
+    color: rgba(185, 185, 185, 1);
+}
+.footer .container .top .footer__about .footer__about-social {
+    margin-top: 30px;
+}
+.footer .container .top .footer__about i {
+    color: $main-color;
+    width: 39.2px;
+    height: 39.2px;
+    margin: 5px 10px 5px 0;
+    background: rgba(42, 42, 42, 1);
+    text-align: center;
+    line-height: 39.2px;
+    border-radius: 5px;
+}
+.footer .container .top .footer__infor {
+    width: 30%;
+}
+.footer .container .top .footer__infor i {
+    color: $main-color;
+}
+.footer .container .top .footer__infor p {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+}
+.footer .container .top .footer__infor p span {
+    font-weight: 400;
+    color: rgba(185, 185, 185, 1);
+    line-height: 1.8em;
+
+}
+.footer .container .top .footer__associate {
+    width: 10%;
+}
+.footer .container .top .footer__associate ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+}
+.footer .container .top .footer__associate ul li{
+    color: #fff;
+    font-size: 13px;
+    line-height: 2.5em;
+    font-weight: 700;
+}
+.footer .container .top .footer__fanpage {
+    width: 30%;
+    position: relative;
+}
+.footer .container .top .footer__fanpage img {
+    position: absolute;
+    width: 100%;
+}
+
+.footer .container .bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    font-size: 12px;
+    padding: 10px 0;
+}
+.footer .container .bottom i {
+    font-size: 20px;
+}
