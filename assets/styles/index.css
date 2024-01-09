@@ -244,6 +244,10 @@ body {
   cursor: pointer;
 }
 
+.header__bottom {
+  box-shadow: 0px 3px 5px 0 rgba(0, 0, 0, 0.15);
+}
+
 .content .content__banner {
   background: url(../img/bannergreen-removebg.png) center/cover;
   height: 560px;
