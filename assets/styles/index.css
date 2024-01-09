@@ -1765,6 +1765,16 @@ body {
   margin-top: 8px;
 }
 
+.content .content__service .container .button button,
+.content .content__location .container .button button {
+  transition: 0.3s;
+}
+
+.content .content__service .container .button button:hover,
+.content .content__location .container .button button:hover {
+  transform: scale(1.1);
+}
+
 .footer .container .top {
   display: flex;
   gap: 30px;
