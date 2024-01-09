@@ -215,9 +215,6 @@ body {
   .open-bar {
     transform: translateX(0) !important;
   }
-  .content {
-    margin-top: 0px !important;
-  }
   .header .header__bottom .container {
     padding: 10px 0;
   }
@@ -234,6 +231,13 @@ body {
     display: block !important;
     font-size: 20px;
     cursor: pointer;
+  }
+  .header__bottom {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    right: 0;
   }
 }
 #vanAnh {
@@ -1683,6 +1687,9 @@ body {
   }
   .footer .container .bottom {
     flex-direction: column;
+  }
+  .content {
+    margin-top: 81.34px;
   }
 }
 .content .content__service .container .content__service-box .child:hover {
