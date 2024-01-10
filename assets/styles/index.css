@@ -1786,6 +1786,30 @@ body {
   transform: scale(1.1);
 }
 
+.content .content__banner2 {
+  position: relative;
+}
+
+.content .content__banner2::after {
+  position: absolute;
+  content: "";
+  width: 200px;
+  background: linear-gradient(90deg, transparent, #fff, transparent);
+  mix-blend-mode: overlay;
+  top: 0;
+  bottom: 0;
+  left: -200px;
+}
+
+.content .content__banner2:hover::after {
+  animation: light 1s forwards;
+}
+
+@keyframes light {
+  to {
+    transform: translateX(1500px);
+  }
+}
 .footer .container .top {
   display: flex;
   gap: 30px;
@@ -1885,4 +1909,8 @@ body {
 
 .footer .container .bottom i {
   font-size: 20px;
+}
+
+.footer .container .top .footer__about i:hover {
+  filter: brightness(1.5);
 }/*# sourceMappingURL=index.css.map */

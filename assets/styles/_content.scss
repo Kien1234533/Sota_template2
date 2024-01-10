@@ -1513,6 +1513,7 @@ $color-6: linear-gradient(to bottom,
     .footer .container .bottom {
         flex-direction: column;
     }
+
     .content {
         margin-top: 81.34px;
     }
@@ -1609,4 +1610,29 @@ $color-6: linear-gradient(to bottom,
 .content .content__service .container .button button:hover,
 .content .content__location .container .button button:hover {
     transform: scale(1.1);
+}
+
+.content .content__banner2 {
+    position: relative;
+}
+
+.content .content__banner2::after {
+    position: absolute;
+    content: '';
+    width: 200px;
+    background: linear-gradient(90deg, transparent, #fff, transparent);
+    mix-blend-mode: overlay;
+    top: 0;
+    bottom: 0;
+    left: -200px;
+}
+
+.content .content__banner2:hover::after {
+    animation: light 1s forwards;
+}
+
+@keyframes light {
+    to {
+        transform: translateX(1500px);
+    }
 }
