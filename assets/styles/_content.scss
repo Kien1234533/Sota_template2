@@ -1636,3 +1636,76 @@ $color-6: linear-gradient(to bottom,
         transform: translateX(1500px);
     }
 }
+
+.contact {
+    position: fixed;
+    background: $color-1;
+    width: 50px;
+    height: 50px;
+    right: 20px;
+    bottom: 20px;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 100%;
+    animation: phone-animation 1.5s infinite;
+}
+
+.contact i {
+    font-size: 20px;
+}
+
+.contact::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(64, 197, 184, 0.2);
+    z-index: -1;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    animation: scaleCall 1.5s ease-in-out infinite;
+}
+@keyframes scaleCall {
+    0% {
+        transform: scale(1.7);
+    }
+    50% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.7);
+    }
+}
+
+@keyframes phone-animation {
+    0% {
+        -webkit-transform: rotate(0)
+    }
+
+    10% {
+        -webkit-transform: rotate(-25deg)
+    }
+
+    20% {
+        -webkit-transform: rotate(25deg)
+    }
+
+    30% {
+        -webkit-transform: rotate(-25deg)
+    }
+
+    40% {
+        -webkit-transform: rotate(25deg)
+    }
+
+    50% {
+        -webkit-transform: rotate(0)
+    }
+
+    100% {
+        -webkit-transform: rotate(0)
+    }
+}
