@@ -1706,8 +1706,32 @@ body {
 
 .rung {
   margin-top: 23px;
+  animation: rung 1.5s infinite;
 }
 
+@keyframes rung {
+  0% {
+    -webkit-transform: rotate(0);
+  }
+  10% {
+    -webkit-transform: rotate(-25deg);
+  }
+  20% {
+    -webkit-transform: rotate(25deg);
+  }
+  30% {
+    -webkit-transform: rotate(-25deg);
+  }
+  40% {
+    -webkit-transform: rotate(25deg);
+  }
+  50% {
+    -webkit-transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(0);
+  }
+}
 .content .content__banner .content__banner-text .container svg#front {
   animation: topBottom 1s infinite alternate;
 }
